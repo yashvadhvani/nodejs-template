@@ -5,7 +5,7 @@ const get = async (notesObj) => {
 }
 
 const addMultiple = async (notesObj) => {
-    return (await (notesSchema.insertMany(notesObj, { ordered: false })))
+    return (await (notesSchema.insertMany(notesObj, { ordered: false })));
 }
 
 const update = async (notesObj) => {
@@ -13,7 +13,7 @@ const update = async (notesObj) => {
 }
 
 const deleteOne = async (notesObj) => {
-    return (await (notesSchema.deleteOne(notesObj)))
+    return (await (notesSchema.deleteOne(notesObj)));
 }
 
 module.exports = {
